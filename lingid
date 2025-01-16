@@ -1,12 +1,39 @@
-https://prod.liveshare.vsengsaas.visualstudio.com/join?943F641A1FF56AF4CB863FBE8D939FFF19D6
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(198, 189, 189, 0.75);
+}
 
-.button {
-    font: inherit;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    border: 1px solid #40005d;
-    background-color: #40005d;
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+    background: rgba(41, 39, 39, 0.75);
+}
+.header {
+    background: #a892ee;
+    padding: 1rem;
+}
+
+.header h2 {
+    margin: 0;
     color: white;
-    border-radius: 12px;
-    margin-right: 1rem;
+}
+
+.content {
+    padding: 1rem;
+    color: white;
+}
+
+.footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
 }
