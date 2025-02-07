@@ -1,5 +1,5 @@
-https://github.com/AnnaKarutina/doctrine_orm_project_base/blob/master/public/style/app.css
-https://github.com/AnnaKarutina/doctrine_orm_project_base/tree/master/public/images
-
-
-https://docs.google.com/document/d/1WftIeV053N8F5ZcgZgntT_iKC4OMxsnlml770jbkO1Q/edit?tab=t.0
+CREATE TABLE IF NOT EXISTS author(
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+);
