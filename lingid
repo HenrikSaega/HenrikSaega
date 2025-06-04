@@ -1,1 +1,7 @@
 https://script.google.com/macros/s/AKfycbyFo70UcVJ2J-wSoT1Q2HaXd2M2SsPcQLoTUSQtWp4rC0B9RjMUylBnQ_FCrZIZHe-SQg/exec
+<?php
+define("DB_HOST", "vso24saega.ita.voco.ee");
+define("DB_USER", "vso24saega");
+define("DB_PASSWORD", "I^G^F^.;&)oi");
+define("DB_NAME", "vso24saega_Haaletussusteem");
+?>
