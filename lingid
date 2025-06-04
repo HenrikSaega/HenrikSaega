@@ -5,3 +5,37 @@ define("DB_USER", "vso24saega");
 define("DB_PASSWORD", "I^G^F^.;&)oi");
 define("DB_NAME", "vso24saega_Haaletussusteem");
 ?>
+<?php
+// Load config
+require_once('config.php');
+
+// Connect to DB
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+// Check connection
+if ($conn->connect_error) {
+    die("❌ Connection failed: " . $conn->connect_error);
+}
+
+echo "✅ Connected to database<br>";
+
+// Run query
+$sql = "SELECT * FROM your_table_name LIMIT 10";  // Replace this!
+$result = $conn->query($sql);
+
+// Check for query errors
+if (!$result) {
+    die("❌ Query error: " . $conn->error);
+}
+
+// Show results
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo "<pre>" . print_r($row, true) . "</pre>";
+    }
+} else {
+    echo "⚠️ No results found.";
+}
+
+$conn->close();
+?>
